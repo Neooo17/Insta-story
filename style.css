@@ -39,6 +39,7 @@ body{
     border-radius: 50%;
     overflow: hidden;
     display: inline-block;
+    margin-right: 8px;
 }
 
 .story img{
