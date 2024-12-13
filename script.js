@@ -6,11 +6,14 @@ var arr = [
     {dp:"https://images.unsplash.com/photo-1466442929976-97f336a657be?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", story:"https://images.unsplash.com/photo-1466442929976-97f336a657be?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
 ]
 
-var cluttter = ""
+var clutter = ""
 
 arr.forEach(function(value, index){
     console.log(value.dp, index);
-    cluttter += value;
+    clutter += `<div class="story">
+                <img src="${value.dp}" alt="">
+            </div>`
     
 })
-console.log(cluttter);
+// console.log(cluttter);
+document.querySelector('.stories').innerHTML = clutter
