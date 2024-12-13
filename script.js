@@ -20,5 +20,6 @@ document.querySelector('.stories').innerHTML = clutter
 
 document.querySelector('.stories').addEventListener("click", function(details){
     console.log(arr[details.target.id].story);
-    
+    document.querySelector('.full-screen').style.display = "block" ;
+    document.querySelector('.full-screen').style.backgroundImage = `url(${arr[details.target.id].story})`  ;
 })
