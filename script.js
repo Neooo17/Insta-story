@@ -11,9 +11,14 @@ var clutter = ""
 arr.forEach(function(value, index){
     console.log(value.dp, index);
     clutter += `<div class="story">
-                <img src="${value.dp}" alt="">
+                <img id=${index} src="${value.dp}" alt="">
             </div>`
     
 })
 // console.log(cluttter);
 document.querySelector('.stories').innerHTML = clutter
+
+document.querySelector('.stories').addEventListener("click", function(details){
+    console.log(arr[details.target.id].story);
+    
+})
