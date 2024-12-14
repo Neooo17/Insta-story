@@ -13,9 +13,10 @@ arr.forEach(function(value, index){
     clutter += `<div class="story">
                 <img id=${index} src="${value.dp}" alt="">
             </div>`
-    
 })
+
 // console.log(cluttter);
+
 document.querySelector('.stories').innerHTML = clutter
 
 document.querySelector('.stories').addEventListener("click", function(details){
